@@ -8,22 +8,22 @@
 Summary:	XML::Catalog - Resolve public identifiers and remap system identifiers
 Summary(pl.UTF-8):	XML::Catalog - rozwiązywanie identyfikatorów publicznych i przemapowywanie systemowych
 Name:		perl-XML-Catalog
-Version:	1.0.1
+Version:	1.03
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-v%{version}.tar.gz
-# Source0-md5:	5c04659a9d8057fb4e9541bb3fbde397
+Source0:	http://www.cpan.org/modules/by-module/XML/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	c2c14f3e87aa75ebb7130ea4ebd41984
 URL:		http://search.cpan.org/dist/XML-Catalog/
 BuildRequires:	perl-Module-Build
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
-BuildRequires:	perl-libwww
 BuildRequires:	perl-Test-Simple
 BuildRequires:	perl-URI
 BuildRequires:	perl-XML-Parser
+BuildRequires:	perl-libwww
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -49,7 +49,7 @@ sformułowanym XML-em).
 Ten moduł w wersji 1.0.0 obsługuje także katalogi Oasis XML.
 
 %prep
-%setup -q -n %{pdir}-%{pnam}-v%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 %{__perl} Build.PL \
