@@ -4,7 +4,6 @@
 #
 %define		pdir	XML
 %define		pnam	Catalog
-%include	/usr/lib/rpm/macros.perl
 Summary:	XML::Catalog - Resolve public identifiers and remap system identifiers
 Summary(pl.UTF-8):	XML::Catalog - rozwiązywanie identyfikatorów publicznych i przemapowywanie systemowych
 Name:		perl-XML-Catalog
