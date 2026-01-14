@@ -8,7 +8,7 @@ Summary:	XML::Catalog - Resolve public identifiers and remap system identifiers
 Summary(pl.UTF-8):	XML::Catalog - rozwiązywanie identyfikatorów publicznych i przemapowywanie systemowych
 Name:		perl-XML-Catalog
 Version:	1.03
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
